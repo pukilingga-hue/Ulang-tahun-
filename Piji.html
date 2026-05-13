@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Sahabat</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding:20px;
+      color:white;
+    }
+
+    .card{
+      width:350px;
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(10px);
+      border:1px solid rgba(255,255,255,0.15);
+      border-radius:25px;
+      overflow:hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+      animation: muncul 1s ease;
+    }
+
+    @keyframes muncul{
+      from{
+        opacity:0;
+        transform:translateY(30px);
+      }
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+    }
+
+    .foto{
+      width:100%;
+      height:420px;
+      object-fit:cover;
+    }
+
+    .content{
+      padding:25px;
+      text-align:center;
+    }
+
+    h1{
+      font-size:30px;
+      margin-bottom:10px;
+      color:#60a5fa;
+    }
+
+    h2{
+      font-size:20px;
+      margin-bottom:15px;
+      font-weight:normal;
+    }
+
+    p{
+      font-size:15px;
+      line-height:1.7;
+      color:#e2e8f0;
+    }
+
+    .tanggal{
+      margin-top:18px;
+      font-size:14px;
+      color:#93c5fd;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:20px;
+      padding:12px 25px;
+      border-radius:12px;
+      background:#3b82f6;
+      color:white;
+      text-decoration:none;
+      transition:0.3s;
+      font-weight:bold;
+    }
+
+    .btn:hover{
+      background:#2563eb;
+      transform:scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+
+    <!-- GANTI nama file foto sesuai nama foto kamu -->
+    <img src="foto-sahabat.jpg" alt="Foto Sahabat" class="foto">
+
+    <div class="content">
+      <h1>Happy Birthday</h1>
+      <h2>Selamat Ulang Tahun Ke-16</h2>
+
+      <p>
+        Selamat ulang tahun buat sahabat terbaikku.
+        Semoga di umur 16 tahun ini semua hal baik
+        selalu datang ke hidup kamu.
+        Tetap jadi pribadi yang kuat, keren,
+        dan selalu bisa bikin suasana jadi seru.
+        Semoga semua impian dan tujuan kamu
+        bisa tercapai satu per satu.
+      </p>
+
+      <div class="tanggal">
+        26 Mei 2026
+      </div>
+
+      <a href="#" class="btn">Best Friend Forever</a>
+    </div>
+
+  </div>
+
+</body>
+</html>
